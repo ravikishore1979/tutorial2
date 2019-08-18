@@ -1,0 +1,15 @@
+general:
+  buildTool: 'npm'
+steps:
+  mtaBuild:
+    applicationName: 'tutorial'
+    buildTarget: 'CF'
+  cloudFoundryDeploy:
+    deployTool: 'mtaDeployPlugin'
+    deployType: 'standard'
+    cloudFoundry:
+      apiEndpoint: 'https://api.cf.us10.hana.ondemand.com'
+      org: 'P2001579154trial_trial'
+      space: 'dev'
+      credentialsId: 'CF_CREDENTIALSID'
+
