@@ -4,6 +4,9 @@ node() {
         checkout scm
         setupCommonPipelineEnvironment script:this
     }
+    stage('CopyConfig') {
+	echo "Test scrip"
+    }
     stage('build') {
     mtaBuild script: this
     }
